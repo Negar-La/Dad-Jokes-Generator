@@ -125,5 +125,9 @@ h2 {
         font-size: 20px;
         margin-top: 60px;
     }
+    .joke {
+        margin: 10px;
+        margin-bottom: 40px;
+    }
     
 }
