@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
     min-height: 100vh;
-    justify-content: center;
+    /* justify-content: center; */
     background-size: cover;
     background-repeat: no-repeat;
     /* overflow: hidden; */
@@ -22,10 +22,8 @@ h2 {
 }
 
 .clock {
-
     display: flex;
     justify-content: center;
-    width: 80%;
     margin-bottom: 40px;
 }
 
@@ -64,12 +62,13 @@ h2 {
 }
 
 .container {
-    font-family: monospace;
+    font-family: oswald;
     background-color: rgba(255,255,255,0.3);
     padding: 20px;
     box-shadow: 0 6px 10px rgba(0,0,0,0.3);
     border-radius: 15px;
     width: 65%;  /* This width is responsive! */
+    margin: auto;
     text-align: center;
     color: darkblue;
     margin-bottom: 40px;
@@ -77,10 +76,13 @@ h2 {
 
 .heading {
     font-size: 35px;
-    font-weight: 200;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 2px 5px 2px rgba(0,0,0,0.3);
+    font-weight: 600;
     letter-spacing: 2px;
+}
+
+.heading img {
+    height: 40px;
+    margin-bottom: -6px;
 }
 
 .joke {
@@ -92,6 +94,7 @@ h2 {
 .btn {
     font-size: 18px;
     font-weight: 700;
+    font-family: oswald;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px;
@@ -111,9 +114,6 @@ h2 {
 }
 
 @media (max-width: 550px) {
-    .btn {
-        width: 200px;
-    }
     .clock span {
         width: 80px;
         height: 60px;
@@ -124,10 +124,13 @@ h2 {
         height: 30px;
         font-size: 20px;
         margin-top: 60px;
-    }
+    } 
     .joke {
         margin: 10px;
         margin-bottom: 40px;
+    }
+    .btn {
+        width: 200px;
     }
     
 }
