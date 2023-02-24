@@ -1,16 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center; */
+    font-family: oswald;
     min-height: 100vh;
-    /* justify-content: center; */
     background-size: cover;
     background-repeat: no-repeat;
-    /* overflow: hidden; */
     background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
 }
+
+/* ------------------------- Digital clock ------------------------- */
 
 h2 {
     text-transform: uppercase;
@@ -25,7 +23,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-}
+} 
 
 .clock div {
     margin: 5px;
@@ -57,17 +55,18 @@ h2 {
     width: 60px;
     height: 30px;
     font-size: 20px;
-    background-color: green;
+    background-color: darkblue;
     margin-top: 80px;
 }
 
+/* ------------------------- Dad Joke Generator ------------------------- */
 .container {
-    font-family: oswald;
     background-color: rgba(255,255,255,0.3);
     padding: 20px;
     box-shadow: 0 6px 10px rgba(0,0,0,0.3);
     border-radius: 15px;
     width: 65%;  /* This width is responsive! */
+    max-width: 900px;
     margin: auto;
     text-align: center;
     color: darkblue;
@@ -113,6 +112,111 @@ h2 {
     box-shadow: 0 4px 4px rgba(0,0,0,0.3);
 }
 
+
+/* ------------------------- Feedback ------------------------- */
+
+.containerFB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255,255,255,0.6);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.ratings-container {
+    display: flex;
+}
+
+.rating {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+    transition: all 300ms ease;
+}
+
+.rating:hover,
+  .rating.active{
+    cursor: pointer;
+    background-color: slateblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: white;
+}
+
+.rating img {
+    width: 40px;
+}
+
+.btnFB {
+    background-color: darkblue;
+    color: aliceblue;
+    border: 0;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btnFB:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.btnFB:active {
+    transform: scale(0.96);
+}
+
+.thankYou {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.feedback {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.para {
+    font-size: 20px;
+    font-weight: 500;
+    color: slateblue;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btnBack {
+    background-color: darkblue;
+    color: aliceblue;
+    border: 0;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btnBack:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.btnBack:active {
+    transform: scale(0.96);
+}
+
+
+
+
 @media (max-width: 550px) {
     .clock span {
         width: 80px;
@@ -125,12 +229,18 @@ h2 {
         font-size: 20px;
         margin-top: 60px;
     } 
+    .container{
+        width: 80%; 
+    }
     .joke {
         margin: 10px;
         margin-bottom: 40px;
     }
     .btn {
         width: 200px;
+    }
+    .containerFB {
+        width: 70%;
     }
     
 }
